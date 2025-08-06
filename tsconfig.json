@@ -1,5 +1,4 @@
-```typescript
-import './style.css';
+import './src/index.css';
 
 const appDiv = document.getElementById('app');
 if (appDiv) {
@@ -8,4 +7,3 @@ if (appDiv) {
     <p>Welcome to your Vite + TypeScript project.</p>
   `;
 }
-```
