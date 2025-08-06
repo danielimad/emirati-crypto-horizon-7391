@@ -1,0 +1,11 @@
+```typescript
+import './style.css';
+
+const appDiv = document.getElementById('app');
+if (appDiv) {
+  appDiv.innerHTML = `
+    <h1>Hello Vite + TypeScript!</h1>
+    <p>Welcome to your Vite + TypeScript project.</p>
+  `;
+}
+```
