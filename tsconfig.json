@@ -1,9 +1,18 @@
 import './src/index.css';
 
-const appDiv = document.getElementById('app');
-if (appDiv) {
-  appDiv.innerHTML = `
-    <h1>Hello Vite + TypeScript!</h1>
-    <p>Welcome to your Vite + TypeScript project.</p>
-  `;
+{
+  "compilerOptions": {
+    "target": "ESNext",                        // Target modern JavaScript features
+    "useDefineForClassFields": true,            // Use define for class fields
+    "module": "ESNext",                         // Use ES Modules
+    "moduleResolution": "node",                 // Resolve modules using Node.js style
+    "jsx": "preserve",                          // Preserve JSX syntax for frameworks like React or Vue
+    "sourceMap": true,                          // Generate source maps for debugging
+    "strict": true,                             // Enable strict type checking
+    "esModuleInterop": true,                    // Enables emit interoperability for commonjs and es modules
+    "skipLibCheck": true,                       // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true    // Enforce consistent casing for imports
+  },
+  "include": ["src"],                           // Include source files in the `src` directory
+  "exclude": ["node_modules", "dist"]           // Exclude these directories
 }
